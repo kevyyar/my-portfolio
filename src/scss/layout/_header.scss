@@ -1,0 +1,57 @@
+.header {
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+
+  .logo {
+    // width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+    border-bottom: 2px solid $green;
+    span {
+      color: $green;
+    }
+    @media (min-width: 768px) {
+      font-size: 4rem;
+      width: unset;
+      text-align: unset;
+      margin: unset;
+      border-bottom: unset;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .navigation {
+    list-style: none;
+    display: none;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    letter-spacing: 1.3px;
+    font-weight: 900;
+    @media (min-width: 768px) {
+      display: flex;
+      li a {
+        text-decoration: none;
+        margin-right: 1.4rem;
+        color: white;
+        transition: border-bottom 0.2s ease-in-out;
+      }
+      li a:hover {
+        border-bottom: 1px solid white;
+      }
+    }
+
+    li:nth-child(5) a {
+      margin-left: 2rem;
+      padding: 1rem 3rem;
+      border: 1px solid $green;
+    }
+  }
+}
