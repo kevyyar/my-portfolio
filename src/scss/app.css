@@ -357,7 +357,6 @@ html {
 body {
   font-family: "Darker Grotesque", sans-serif;
   font-size: 1.8rem;
-  background-color: #1f2336;
 }
 
 h1,
@@ -500,7 +499,7 @@ body {
     display: block;
   }
 }
-header {
+.header {
   font-size: 2.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,18 +512,18 @@ header {
           align-items: center;
   padding: 3rem;
 }
-header .logo {
+.header .logo {
   margin: 0 auto;
   text-align: center;
   font-size: 6rem;
   font-weight: 800;
   border-bottom: 2px solid #ffc576;
 }
-header .logo span {
+.header .logo span {
   color: #ffc576;
 }
 @media (min-width: 768px) {
-  header .logo {
+  .header .logo {
     font-size: 4rem;
     width: unset;
     text-align: unset;
@@ -532,11 +531,11 @@ header .logo span {
     border-bottom: unset;
   }
 }
-header .logo a {
+.header .logo a {
   text-decoration: none;
   color: white;
 }
-header .navigation {
+.header .navigation {
   list-style: none;
   display: none;
   text-transform: uppercase;
@@ -545,23 +544,23 @@ header .navigation {
   font-weight: 900;
 }
 @media (min-width: 768px) {
-  header .navigation {
+  .header .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  header .navigation li a {
+  .header .navigation li a {
     text-decoration: none;
     margin-right: 1.4rem;
     color: white;
     -webkit-transition: border-bottom 0.2s ease-in-out;
     transition: border-bottom 0.2s ease-in-out;
   }
-  header .navigation li a:hover {
+  .header .navigation li a:hover {
     border-bottom: 1px solid white;
   }
 }
-header .navigation li:nth-child(5) a {
+.header .navigation li:nth-child(5) a {
   margin-left: 2rem;
   padding: 1rem 3rem;
   border: 1px solid #ffc576;
@@ -636,6 +635,7 @@ header .navigation li:nth-child(5) a {
 }
 .hero .hero__image {
   text-align: center;
+  z-index: 9;
 }
 .hero .hero__image img {
   width: 70%;
@@ -648,9 +648,151 @@ header .navigation li:nth-child(5) a {
 
 .about {
   height: 100vh;
+  background-color: #1f2336;
   background-image: url(/src/img/background_shapes.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.about__container {
+  background: #313552;
+}
+.about .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #2e2f48;
+  color: #fff;
+}
+.about .tabs .tab {
+  list-style: none;
+  padding: 2rem 5rem;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.about .tabs .tab.active {
+  background-color: #ffc576;
+  color: #000;
+}
+.about .tabs .tab:hover {
+  background: #ffc576;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .about__container .tab-content .active[data-tab-content].about-me {
+    padding: 5rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
+.about__container .tab-content .active[data-tab-content].about-me .about-me-img {
+  text-align: center;
+}
+.about__container .tab-content .active[data-tab-content].about-me .about-me-img img {
+  max-width: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about__container .tab-content .active[data-tab-content].about-me .about-me-info {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about__container .tab-content .active[data-tab-content].about-me .about-me-info .about-me__subtitle {
+  text-transform: uppercase;
+  color: #ffc576;
+  font-weight: 900;
+  padding-bottom: 3rem;
+}
+.about__container .tab-content .active[data-tab-content].about-me .about-me-info .about-me__title {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 5.5rem;
+  font-weight: 300;
+  padding-bottom: 3rem;
+}
+.about__container .tab-content .active[data-tab-content].about-me .about-me-info .about-me__description {
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+.about__container .tab-content .active[data-tab-content].about-me .about-me-info .about-me__description p {
+  margin-bottom: 2rem;
+}
+.about__container .tab-content .active[data-tab-content].about-me .about-me-info .about-me__cv {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  border: 1px solid #ffc576;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.about__container .tab-content .active[data-tab-content].about-me .about-me-info .about-me__cv:hover {
+  background-color: #ffc576;
+  color: #000;
+  cursor: pointer;
+}
+.about__container .tab-content .active[data-tab-content].services {
+  padding: 5rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 5rem;
+}
+.about__container .tab-content .active[data-tab-content].services .service {
+  text-align: center;
+  color: #fff;
+}
+.about__container .tab-content .active[data-tab-content].services .service h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.about__container .tab-content .active[data-tab-content].services .service p {
+  font-size: 2rem;
+  line-height: 1.4;
+  letter-spacing: 1.2px;
+}
+.about__container .tab-content .active[data-tab-content].services .fas {
+  font-size: 5rem;
+  color: #ffc576;
+  margin-bottom: 2rem;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
 }
 /*# sourceMappingURL=app.css.map */

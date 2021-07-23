@@ -6,6 +6,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: unset;
+    margin-bottom: 4rem;
   }
 
   .hero__info {
@@ -50,7 +51,7 @@
     text-align: center;
     z-index: 9;
     img {
-      width: 70%;
+      width: 60%;
       @media (min-width: 768px) {
         width: 70%;
       }
