@@ -23,7 +23,7 @@
       <div class="cube"></div>
     </div>
     <!-- HEADER -->
-    <header>
+    <header id="home">
       <div class="header container">
         <div class="logo">
           <a href="/">Kev<span>The</span>Dev</a>
@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
       <div class="about__container container">
         <ul class="tabs">
           <li class="tab tab--about-me active" data-tab-target="#about">About Me</li>
@@ -129,7 +129,7 @@
     
     <!-- PORTFOLIO PROJECTS -->
     <div class="container">
-      <div class="projects">
+      <div class="projects" id="projects">
         <p class="projects__subtitle">my works</p>
         <h3 class="projects__title">Projects</h3>
         <div class="project-container">
@@ -160,6 +160,52 @@
         </div>
       </div>
     </div>
+
+    <!-- CONTACT FORM -->
+    <div class="container form-container">
+      <p>Contact Me</p>
+      <h3>Let's Chat</h3>
+      <form class="form" id="contact">
+        <div class="field">
+            <input class="field__name" type="text" id="name" placeholder="Your Name">
+        </div>
+        <div class="field">
+            <input class="field__email" type="email" id="email" placeholder="Your E-mail">
+        </div>
+        <div class="field">
+            <textarea class="field__message" id="message" placeholder="Your Mensaje"></textarea>
+        </div>
+        <div>
+            <input class="field__send" type="submit" value="Send">
+        </div>
+    </form>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="top">
+          <div class="footer-logo">
+            <a href="/">Kev<span>The</span>Dev</a>
+          </div>
+          <div class="lets-talk">
+            <h3>Let's Talk?</h3>
+          </div>
+          <div class="lets-chat">
+            <a href="#">Let's Chat</a>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="footer-links">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="build/js/bundle.min.js"></script>
   </body>

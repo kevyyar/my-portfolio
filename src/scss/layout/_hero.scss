@@ -1,5 +1,8 @@
 .hero {
-  height: 100vh;
+  padding-bottom: 5rem;
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
 
   @media (min-width: 768px) {
     display: flex;

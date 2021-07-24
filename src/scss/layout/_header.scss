@@ -52,6 +52,11 @@
       margin-left: 2rem;
       padding: 1rem 3rem;
       border: 1px solid $green;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: $green;
+        color: #000;
+      }
     }
   }
 }

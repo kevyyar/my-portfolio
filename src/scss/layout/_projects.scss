@@ -1,5 +1,12 @@
 .projects {
   margin-top: 15rem;
+  padding: 5rem;
+  @media (min-width: 768px) {
+    padding: 3rem;
+  }
+  @media (min-width: 1200px) {
+    padding: unset;
+  }
   &__subtitle {
     font-size: 2rem;
     text-transform: uppercase;
@@ -16,21 +23,23 @@
   }
 
   .project-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
     a {
       text-decoration: none;
     }
     .project {
-      width: 40%;
+      width: 100%;
       border-radius: 2rem 2rem 0 0;
       border: none;
       box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.51);
       -webkit-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.51);
       -moz-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.51);
       margin-right: 5rem;
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
       border-bottom: 1px solid $green;
       transition: transform 0.3s ease-in-out;
       &:hover {

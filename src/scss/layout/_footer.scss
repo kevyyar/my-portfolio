@@ -1,0 +1,110 @@
+.footer {
+  background-color: $darkBlue;
+  .footer-container {
+    padding: 7rem 5rem;
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+    .top {
+      @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .footer-logo {
+        text-align: center;
+        font-size: 6rem;
+        margin-bottom: 2rem;
+        @media (min-width: 768px) {
+          margin: 0 auto;
+          text-align: center;
+          font-weight: 800;
+          // border-bottom: 2px solid $green;
+          color: $white;
+          margin-bottom: unset;
+        }
+        span {
+          color: $green;
+        }
+        @media (min-width: 768px) {
+          font-size: 4rem;
+          width: unset;
+          text-align: unset;
+          margin: unset;
+          border-bottom: unset;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+      .lets-talk {
+        font-family: $secondaryFont;
+        color: $white;
+        font-weight: 100;
+        letter-spacing: 1.2px;
+        font-size: 2rem;
+        text-align: center;
+        h3 {
+          @media (min-width: 768px) {
+            font-size: 4rem;
+          }
+        }
+      }
+      .lets-chat {
+        text-align: center;
+        width: 100px;
+        margin: 2rem auto;
+        padding: 1rem;
+        border: 1px solid $green;
+        transition: all 0.3s ease-in-out;
+        @media (min-width: 768px) {
+          margin: unset;
+          width: unset;
+          padding: 1rem 3rem;
+        }
+
+        a {
+          color: $white;
+          font-weight: 900;
+          text-transform: uppercase;
+          text-decoration: none;
+          letter-spacing: 1.3px;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: #000;
+          }
+        }
+        &:hover {
+          background-color: $green;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .bottom {
+      margin-top: 4rem;
+      .footer-links {
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          li a {
+            text-decoration: none;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            margin-right: 3rem;
+            &:hover {
+              border-bottom: 1px solid white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
