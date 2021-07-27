@@ -1,0 +1,58 @@
+.services-container {
+  padding: 3rem;
+  // background-color: red;
+}
+.services__title {
+  color: #fff;
+  font-family: Playfair Display, serif;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  margin-bottom: 5rem;
+}
+.services__subtitle {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: $green;
+  margin-bottom: 2rem;
+}
+.services {
+  // background-color: $darkBlue;
+  @media (min-width: 768px) {
+    padding: 5rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 5rem;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service {
+    text-align: center;
+    color: $white;
+    margin-bottom: 4rem;
+    @media (min-width: 768px) {
+      margin-bottom: unset;
+    }
+    h3 {
+      font-family: $secondaryFont;
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 2rem;
+      line-height: 1.4;
+      letter-spacing: 1.2px;
+    }
+  }
+
+  .fas {
+    font-size: 5rem;
+    color: $green;
+    margin-bottom: 2rem;
+  }
+}

@@ -567,7 +567,12 @@ body {
 }
 
 .hero {
-  height: 100vh;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
 }
 @media (min-width: 768px) {
   .hero {
@@ -653,88 +658,49 @@ body {
 
 .about {
   background-color: #1f2336;
-  background-image: url(/src/img/background_shapes.png);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-.about__container {
-  background: #313552;
-}
-.about .tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
-  padding: 0;
-  background-color: #2e2f48;
+.about__container .about__title {
   color: #fff;
+  font-family: Playfair Display, serif;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  margin-bottom: 3rem;
 }
-.about .tabs .tab {
-  list-style: none;
-  padding: 2rem 5rem;
-  width: 100%;
-  text-align: center;
+.about__container .about__subtitle {
+  font-size: 2rem;
   text-transform: uppercase;
-  font-weight: 700;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.about .tabs .tab.active {
-  background-color: #ffc576;
-  color: #000;
-}
-.about .tabs .tab:hover {
-  background: #ffc576;
-  color: #000;
+  color: #ffc576;
+  margin-bottom: 2rem;
 }
 
-.about__container .tab-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.about__container {
   padding: 3rem;
 }
 @media (min-width: 768px) {
-  .about__container .tab-content .active[data-tab-content].about-me {
+  .about__container .about-me {
     padding: 5rem 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
+    margin-bottom: 15rem;
   }
 }
-.about__container .tab-content .active[data-tab-content].about-me .about-me-img {
+.about__container .about-me .about-me-img {
   display: none;
 }
 @media (min-width: 768px) {
-  .about__container .tab-content .active[data-tab-content].about-me .about-me-img {
+  .about__container .about-me .about-me-img {
     display: block;
     text-align: center;
   }
-  .about__container .tab-content .active[data-tab-content].about-me .about-me-img img {
+  .about__container .about-me .about-me-img img {
     max-width: 80%;
     -o-object-fit: contain;
        object-fit: contain;
   }
 }
-.about__container .tab-content .active[data-tab-content].about-me .about-me-info {
+.about__container .about-me .about-me-info {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -747,29 +713,29 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.about__container .tab-content .active[data-tab-content].about-me .about-me-info .about-me__subtitle {
+.about__container .about-me .about-me-info .about-me__subtitle {
   text-transform: uppercase;
   color: #ffc576;
   font-weight: 900;
   padding-bottom: 3rem;
 }
-.about__container .tab-content .active[data-tab-content].about-me .about-me-info .about-me__title {
+.about__container .about-me .about-me-info .about-me__title {
   color: #fff;
   font-family: "Playfair Display", serif;
   font-size: 5.5rem;
   font-weight: 300;
   padding-bottom: 3rem;
 }
-.about__container .tab-content .active[data-tab-content].about-me .about-me-info .about-me__description {
+.about__container .about-me .about-me-info .about-me__description {
   color: #fff;
   font-size: 2.3rem;
   font-weight: 500;
   letter-spacing: 1.2px;
 }
-.about__container .tab-content .active[data-tab-content].about-me .about-me-info .about-me__description p {
+.about__container .about-me .about-me-info .about-me__description p {
   margin-bottom: 2rem;
 }
-.about__container .tab-content .active[data-tab-content].about-me .about-me-info .about-me__cv {
+.about__container .about-me .about-me-info .about-me__cv {
   display: inline-block;
   text-transform: uppercase;
   font-weight: 900;
@@ -781,13 +747,14 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.about__container .tab-content .active[data-tab-content].about-me .about-me-info .about-me__cv:hover {
+.about__container .about-me .about-me-info .about-me__cv:hover {
   background-color: #ffc576;
   color: #000;
   cursor: pointer;
 }
+
 @media (min-width: 768px) {
-  .about__container .tab-content .active[data-tab-content].services {
+  .services {
     padding: 5rem 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -796,43 +763,35 @@ body {
   }
 }
 @media (min-width: 1200px) {
-  .about__container .tab-content .active[data-tab-content].services {
+  .services {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.about__container .tab-content .active[data-tab-content].services .service {
+.services .service {
   text-align: center;
   color: #fff;
   margin-bottom: 4rem;
 }
 @media (min-width: 768px) {
-  .about__container .tab-content .active[data-tab-content].services .service {
+  .services .service {
     margin-bottom: unset;
   }
 }
-.about__container .tab-content .active[data-tab-content].services .service h3 {
+.services .service h3 {
   font-family: "Playfair Display", serif;
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 2rem;
 }
-.about__container .tab-content .active[data-tab-content].services .service p {
+.services .service p {
   font-size: 2rem;
   line-height: 1.4;
   letter-spacing: 1.2px;
 }
-.about__container .tab-content .active[data-tab-content].services .fas {
+.services .fas {
   font-size: 5rem;
   color: #ffc576;
   margin-bottom: 2rem;
-}
-
-[data-tab-content] {
-  display: none;
-}
-
-.active[data-tab-content] {
-  display: block;
 }
 
 .projects {
@@ -935,6 +894,54 @@ body {
 .projects .project-container .project__body .project__link:hover {
   background-color: #ffc576;
   color: #000;
+}
+
+.form-container {
+  padding: 0 5rem 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.form-container p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #ffc576;
+  margin-bottom: 2rem;
+}
+.form-container h3 {
+  margin-bottom: 3rem;
+  font-size: 5rem;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  letter-spacing: 1.2px;
+}
+.form-container .form .field {
+  margin-bottom: 2rem;
+}
+.form-container .form .field input,
+.form-container .form .field textarea {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ffc576;
+}
+.form-container .form .field__name, .form-container .form .field__email, .form-container .form .field__message {
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .form-container .form .field__name, .form-container .form .field__email, .form-container .form .field__message {
+    width: 60%;
+  }
+}
+.form-container .form .field__send {
+  background-color: #ffc576;
+  padding: 1rem 3rem;
+  font-family: "Playfair Display", serif;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .footer {

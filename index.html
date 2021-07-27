@@ -32,9 +32,10 @@
           <ul class="navigation">
             <li class="navigation__link"><a href="#home">Home</a></li>
             <li class="navigation__link"><a href="#about">About</a></li>
+            <li class="navigation__link"><a href="#services">Services</a></li>
             <li class="navigation__link"><a href="#projects">Projects</a></li>
             <li class="navigation__link"><a href="#contact">Contact</a></li>
-            <li class="navigation__link chat"><a href="#">Let's Chat</a></li>
+            <li class="navigation__link chat"><a href="https://wa.link/z3m43z">Let's Chat</a></li>
           </ul>
         </nav>
       </div>
@@ -53,19 +54,15 @@
 
     <div class="about" id="about">
       <div class="about__container container">
-        <ul class="tabs">
-          <li class="tab tab--about-me active" data-tab-target="#about">About Me</li>
-          <li class="tab tab--service" data-tab-target="#services">Services</li>
-        </ul>
-
-        <div class="tab-content">
-          <div class="about-me active" id="about" data-tab-content>
+        <p class="about__subtitle">about me</p>
+        <h3 class="about__title">Who Am I?</h3>
+          <div class="about-me" id="about">
             <div class="about-me-img">
               <img src="/build/img/profile-pic2.webp" alt="" />
             </div>
             <div class="about-me-info">
-              <p class="about-me__subtitle">about me</p>
-              <h3 class="about-me__title">Who am I?</h3>
+              <!-- <p class="about-me__subtitle">about me</p> -->
+              <h3 class="about-me__title">< Hello World! />👋</h3>
               <div class="about-me__description">
                 <p>My name is Kevin Barreto. I am passionate about designing and developing user-friendly websites for businesses. 
                 <p>I have all the skills to create a new high quality website or improve existing websites for individuals and organizations, using the latest techniques and trends. I focus on modern and responsive website solutions that are easy to update by the client.</p> <p>Are you looking for a high quality website for your organization or company at a competitive price ?</p>
@@ -73,44 +70,53 @@
               </div>
             </div>
           </div>
-          <div class="services" id="services" data-tab-content>
-            <div class="service web-design">
-              <i class="fas fa-paint-brush"></i>
-              <h3>Web Design</h3>
-              <p>A new website from the first idea to the successful launch . Together with you I make an appealing design that suits your business. I design using the latest techniques and trends.</p>
-            </div>
-            <div class="service web-dev">
-              <i class="fas fa-laptop-code"></i>
-              <h3>Web Development</h3>
-              <p>I develop custom websites , keeping them unique, functional and modern . Considering the latest technologies like HTML5, CSS3, PHP and more.</p>
-            </div>
-            <div class="service responsive-design">
-              <i class="fas fa-mobile-alt"></i>
-              <h3>Responsive Design</h3>
-              <p>A website must be properly viewed on a wide variety of screens. I make sure that your website is always optimally usable on any device, any operating system and any web browser.
-              </p>
-            </div>
-            <div class="service website-restyling">
-              <i class="fas fa-redo"></i>
-              <h3>Website Redesign</h3>
-              <p>Is your website out of date or need some improvement? I can help you to update it into a modern, user-friendly and responsive website that will convert more visitors into customers and boost your conversion rate.
-              </p>
-            </div>
-            <div class="service ecommerce">
-              <i class="fas fa-shopping-bag"></i>
-              <h3>E-Commerce Shops</h3>
-              <p>If you need an online shop, let me help you build a professional solution according to your requirements and getting your online business up and running. I’ve worked with Shopify, WooCommerce and various other e-Commerce systems.</p>
-            </div>
-            <div class="service maintenance">
-              <i class="fas fa-cogs"></i>
-              <h3>Maintenance & Support</h3>
-              <p>From building your first website to maintaining your existing applications. I provide on-going support and maintenance services to ensure that your website always runs smoothly. I provide honest advice and the best possible support for you to reach your goals.
-              </p>
-            </div>
-          </div> 
-        </div>
       </div>
     </div>
+
+      
+    <section class="services-container" id="services">
+      <div class="container">
+        <p class="services__subtitle">services</p>
+        <h3 class="services__title">What I Offer</h3>
+        <div class="services">
+          <div class="service web-design">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Web Design</h3>
+            <p>A new website from the first idea to the successful launch . Together with you I make an appealing design that suits your business. I design using the latest techniques and trends.</p>
+          </div>
+          <div class="service web-dev">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Web Development</h3>
+            <p>I develop custom websites , keeping them unique, functional and modern . Considering the latest technologies like HTML5, CSS3, PHP and more.</p>
+          </div>
+          <div class="service responsive-design">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Responsive Design</h3>
+            <p>A website must be properly viewed on a wide variety of screens. I make sure that your website is always optimally usable on any device, any operating system and any web browser.
+            </p>
+          </div>
+          <div class="service website-restyling">
+            <i class="fas fa-redo"></i>
+            <h3>Website Redesign</h3>
+            <p>Is your website out of date or need some improvement? I can help you to update it into a modern, user-friendly and responsive website that will convert more visitors into customers and boost your conversion rate.
+            </p>
+          </div>
+          <div class="service ecommerce">
+            <i class="fas fa-shopping-bag"></i>
+            <h3>E-Commerce Shops</h3>
+            <p>If you need an online shop, let me help you build a professional solution according to your requirements and getting your online business up and running. I’ve worked with Shopify, WooCommerce and various other e-Commerce systems.</p>
+          </div>
+          <div class="service maintenance">
+            <i class="fas fa-cogs"></i>
+            <h3>Maintenance & Support</h3>
+            <p>From building your first website to maintaining your existing applications. I provide on-going support and maintenance services to ensure that your website always runs smoothly. I provide honest advice and the best possible support for you to reach your goals.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+   
     
     <!-- PORTFOLIO PROJECTS -->
     <div class="container">
@@ -176,7 +182,7 @@
             <h3>Let's Talk?</h3>
           </div>
           <div class="lets-chat">
-            <a href="#">Let's Chat</a>
+            <a href="https://wa.link/z3m43z">Let's Chat</a>
           </div>
         </div>
         <div class="bottom">
@@ -184,6 +190,7 @@
             <ul>
               <li><a href="/">Home</a></li>
               <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
