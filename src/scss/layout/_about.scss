@@ -58,9 +58,12 @@
       .about-me__title {
         color: $white;
         font-family: $secondaryFont;
-        font-size: 5.5rem;
+        font-size: 4rem;
         font-weight: 300;
         padding-bottom: 5rem;
+        @media (min-width: 768px) {
+          font-size: 6rem;
+        }
       }
       .about-me__description {
         color: $white;
@@ -70,18 +73,21 @@
         p {
           margin-bottom: 2rem;
         }
+        .about-me__icon-container {
+          text-align: center;
+        }
       }
-
       .about-me__cv {
         display: inline-block;
-        text-transform: uppercase;
-        font-weight: 900;
-        font-size: 1.5rem;
-        letter-spacing: 2px;
+        //text-transform: uppercase;
+        //font-weight: 900;
+        font-size: 4rem;
+        //letter-spacing: 2px;
         padding: 1rem 3rem;
         margin-top: 2rem;
-        border: 1px solid $green;
-        transition: all 0.3s ease-in-out;
+        //border: 1px solid $green;
+        //transition: all 0.3s ease-in-out;
+        color: #fff;
         &:hover {
           background-color: $green;
           color: #000;
