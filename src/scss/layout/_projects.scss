@@ -1,89 +1,89 @@
 .projects {
-  margin-top: 15rem;
-  padding: 5rem;
-  @media (min-width: 768px) {
-    padding: 3rem;
-  }
-  @media (min-width: 1200px) {
-    padding: unset;
-  }
-  &__subtitle {
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: $green;
-    margin-bottom: 2rem;
-  }
-  &__title {
-    margin-bottom: 3rem;
-    font-size: 5rem;
-    font-weight: 400;
-    font-family: $secondaryFont;
-    color: $white;
-    letter-spacing: 1.2px;
-  }
+	margin-top: 15rem;
+	padding: 5rem;
+	@media (min-width: 768px) {
+		padding: 3rem;
+	}
+	@media (min-width: 1200px) {
+		padding: unset;
+	}
+	&__subtitle {
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: $green;
+		margin-bottom: 2rem;
+	}
+	&__title {
+		margin-bottom: 3rem;
+		font-size: 5rem;
+		font-weight: 400;
+		font-family: $secondaryFont;
+		color: $white;
+		letter-spacing: 1.2px;
+	}
 
-  .project-container {
-    @media (min-width: 768px) {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-    }
-    a {
-      text-decoration: none;
-    }
-    .project {
-      width: 100%;
-      border-radius: 2rem 2rem 0 0;
-      border: none;
-      box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.51);
-      -webkit-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.51);
-      -moz-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.51);
-      margin-right: 5rem;
-      margin-bottom: 5rem;
-      border-bottom: 1px solid $green;
-      transition: transform 0.3s ease-in-out;
-      &:hover {
-        transform: scale(1.1);
-        border-bottom: 3px solid $green;
-        cursor: pointer;
-      }
+	.project-container {
+		@media (min-width: 768px) {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+		a {
+			text-decoration: none;
+		}
+		.project {
+			width: 100%;
+			border-radius: 2rem 2rem 0 0;
+			border: none;
+			box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.51);
+			-webkit-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.51);
+			-moz-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.51);
+			margin-right: 5rem;
+			margin-bottom: 5rem;
+			border-bottom: 1px solid $green;
+			transition: transform 0.3s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+				border-bottom: 3px solid $green;
+				cursor: pointer;
+			}
 
-      &__image img {
-        width: 100%;
-        border-radius: 10px 10px 0 0;
-      }
+			&__image img {
+				width: 100%;
+				border-radius: 10px 10px 0 0;
+			}
 
-      &__body {
-        padding: 2rem;
-        .project__title {
-          font-size: 3rem;
-          letter-spacing: 1.2px;
-          color: $white;
-          font-family: $secondaryFont;
-          margin-bottom: 3rem;
-        }
-        .project__description {
-          color: $white;
-          font-size: 2rem;
-          margin-bottom: 3rem;
-          line-height: 1.4;
-          letter-spacing: 1.2px;
-        }
-        .project__link {
-          display: inline-block;
-          padding: 1rem 3rem;
-          border: 1px solid $green;
-          color: $green;
-          font-size: 2rem;
-          margin: 2rem 0;
-          text-decoration: none;
-          transition: all 0.3s ease-in-out;
-          &:hover {
-            background-color: $green;
-            color: #000;
-          }
-        }
-      }
-    }
-  }
+			&__body {
+				padding: 2rem;
+				.project__title {
+					font-size: 3rem;
+					letter-spacing: 1.2px;
+					color: $white;
+					font-family: $secondaryFont;
+					margin-bottom: 3rem;
+				}
+				.project__description {
+					color: $white;
+					font-size: 2rem;
+					margin-bottom: 3rem;
+					line-height: 1.4;
+					letter-spacing: 1.2px;
+				}
+				.project__link {
+					display: inline-block;
+					padding: 1rem 3rem;
+					border: 1px solid $green;
+					color: $green;
+					font-size: 2rem;
+					margin: 2rem 0;
+					text-decoration: none;
+					transition: all 0.3s ease-in-out;
+					&:hover {
+						background-color: $green;
+						color: #000;
+					}
+				}
+			}
+		}
+	}
 }
